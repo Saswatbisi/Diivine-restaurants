@@ -1,4 +1,4 @@
-import { Router, type IRouter } from "express";
+import { Router, type IRouter, type Request, type Response } from "express";
 import { db } from "@workspace/db";
 import { ordersTable, menuItemsTable } from "@workspace/db/schema";
 import { eq, inArray } from "drizzle-orm";
@@ -6,7 +6,7 @@ import { CreateOrderBody } from "@workspace/api-zod";
 
 const router: IRouter = Router();
 
-router.get("/orders", async (_req, res) => {
+router.get("/orders", async (_req: Request, res: Response) => {
   try {
     const orders = await db.select().from(ordersTable).orderBy(ordersTable.createdAt);
     const mapped = orders.map((o) => ({
@@ -20,7 +20,7 @@ router.get("/orders", async (_req, res) => {
   }
 });
 
-router.get("/orders/:id", async (req, res) => {
+router.get("/orders/:id", async (req: Request, res: Response) => {
   try {
     const id = parseInt(req.params.id);
     const [order] = await db.select().from(ordersTable).where(eq(ordersTable.id, id));
@@ -35,7 +35,7 @@ router.get("/orders/:id", async (req, res) => {
   }
 });
 
-router.post("/orders", async (req, res) => {
+router.post("/orders", async (req: Request, res: Response) => {
   try {
     const parsed = CreateOrderBody.safeParse(req.body);
     if (!parsed.success) {

@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./artifacts/diivine-restaurant" },
+    { "path": "./artifacts/api-server" },
+    { "path": "./lib/api-client-react" },
+    { "path": "./lib/api-zod" },
+    { "path": "./lib/db" },
+    { "path": "./lib/api-spec" }
+  ]
+}
