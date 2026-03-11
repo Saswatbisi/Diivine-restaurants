@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=@workspace/diivine-restaurant",
-    "build": "npm run build --workspace=@workspace/diivine-restaurant"
+    "build": "npm run build --workspace=@workspace/diivine-restaurant",
+    "start": "npm run serve --workspace=@workspace/diivine-restaurant"
   }
 }
