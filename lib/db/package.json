@@ -1,0 +1,16 @@
+{
+  "name": "@workspace/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.38.0",
+    "drizzle-zod": "^0.7.0",
+    "zod": "^3.24.0"
+  }
+}

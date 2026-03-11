@@ -1,0 +1,17 @@
+{
+  "name": "diivine-restaurant-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "artifacts/diivine-restaurant",
+    "artifacts/api-server",
+    "lib/api-client-react",
+    "lib/api-zod",
+    "lib/db",
+    "lib/api-spec"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@workspace/diivine-restaurant",
+    "build": "npm run build --workspace=@workspace/diivine-restaurant"
+  }
+}

@@ -1,0 +1,11 @@
+src/pages/menu.tsx(2,33): error TS6305: Output file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/dist/index.d.ts' has not been built from source file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/src/index.ts'.
+src/pages/menu.tsx(3,31): error TS6305: Output file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/dist/generated/api.schemas.d.ts' has not been built from source file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/src/generated/api.schemas.ts'.
+src/pages/menu.tsx(16,6): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/pages/menu.tsx(80,34): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/pages/order.tsx(5,32): error TS6305: Output file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/dist/index.d.ts' has not been built from source file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/src/index.ts'.
+src/pages/order.tsx(63,21): error TS7006: Parameter 'res' implicitly has an 'any' type.
+src/pages/reservation.tsx(4,38): error TS6305: Output file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/dist/index.d.ts' has not been built from source file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/src/index.ts'.
+src/pages/reservation.tsx(37,21): error TS7006: Parameter 'res' implicitly has an 'any' type.
+src/pages/tracking.tsx(2,29): error TS6305: Output file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/dist/index.d.ts' has not been built from source file 'D:/Antigravity/diivine-restaurant/lib/api-client-react/src/index.ts'.
+src/pages/tracking.tsx(124,37): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/pages/tracking.tsx(124,43): error TS7006: Parameter 'idx' implicitly has an 'any' type.

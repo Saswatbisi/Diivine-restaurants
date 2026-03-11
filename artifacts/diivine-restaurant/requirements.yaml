@@ -1,0 +1,22 @@
+packages:
+  "framer-motion": "For elegant page transitions and scroll animations fitting a luxury brand"
+  "react-hook-form": "For robust form state management in order and reservation forms"
+  "@hookform/resolvers": "For Zod schema validation integration with react-hook-form"
+  "zod": "For strict schema validation of forms"
+  "date-fns": "For date and time formatting in reservations"
+
+images:
+  - path: "artifacts/diivine-restaurant/public/images/hero-bg.png"
+    description: "Dark, moody luxury fine dining restaurant interior with warm ambient gold lighting, out of focus background, very elegant and sophisticated"
+    aspect_ratio: "16:9"
+  - path: "artifacts/diivine-restaurant/public/images/menu-hero.png"
+    description: "Abstract culinary background in dark charcoal and subtle gold dust, dark food photography style, moody lighting"
+    aspect_ratio: "16:9"
+  - path: "artifacts/diivine-restaurant/public/images/reservation-hero.png"
+    description: "Close up of an elegant fine dining table setting with crystal glasses, dark background, warm candle light reflection, luxurious mood"
+    aspect_ratio: "16:9"
+
+notes:
+  - App enforces a luxury dark theme by setting the :root CSS variables to dark colors with warm gold accents.
+  - Using generated Orval React Query hooks imported from @workspace/api-client-react.
+  - Orval generated mutations expect payloads wrapped in a 'data' property: mutate({ data: formData }).
